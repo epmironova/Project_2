@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<title>Currency Exchange</title>
+	</head>
+	<body>
+		<div class="content" id="index">
+			<p>Type an amount and choose the desirable base and target currencies:</p>
+			<form method="POST" action="ConvertCurrency.do">
+				<table>
+					<tr>
+						<td class="label"><label for="amount">Amount:</label></td>
+						<td><input type="text" id="amount" name="amount"/></td>
+					</tr>
+					<tr>
+						<td class="label"><label for="base">From:</label></td>
+						<td>
+						<select id="base" name="base">
+							<option value="AED">AED,United Arab Emirates Dirham</option>
+							<option value="ARS">ARS,Argentine Peso</option>
+							<option value=""></option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><label for="target">To:</label></td>
+						<td>
+						<select id="target" name="target">
+							<option value="AED">AED,United Arab Emirates Dirham</option>
+							<option value="ARS">ARS,Argentine Peso</option>
+						</select>
+						</td>
+					</tr>
+					<tr >
+						<td class="btn" colspan="2"><input id="btn" type="SUBMIT" value="Convert"/></td>
+					</tr>
+					<tr>
+						<td class="label"><label for="result">Result:</label></td>
+						<td><input type="text" id="result" name="result" readonly="readonly"/></td>
+					</tr>
+				<table>
+				
+			</form>
+		</div>
+	</body>
+</html>
